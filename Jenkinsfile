@@ -9,7 +9,8 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/shreyavinay30/exp10.git'
+                git branch: 'master',
+                    url: 'https://github.com/shreyavinay30/exp10.git'
             }
         }
 
